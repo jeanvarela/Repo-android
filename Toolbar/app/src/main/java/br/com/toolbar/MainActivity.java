@@ -1,13 +1,9 @@
 package br.com.toolbar;
 
 import android.content.res.Configuration;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -54,14 +50,12 @@ public class MainActivity extends ActionBarActivity implements AdapterView.OnIte
         mDrawerList.setAdapter(adapter);
         mDrawerList.setOnItemClickListener(this);
 
-        if (savedInstanceState == null){
-            exibirItem(0);
-        }
+
     }
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-        exibirItem(i);
+       // exibirItem(i);
     }
 
     @Override
@@ -75,7 +69,7 @@ public class MainActivity extends ActionBarActivity implements AdapterView.OnIte
         boolean drawerOpen = mDrawerLayout.isDrawerOpen(mDrawerList);
 
          menu.findItem(R.id.action_settings).setVisible(!drawerOpen);
-        atualizarTitulo(drawerOpen);
+//        atualizarTitulo(drawerOpen);
 
         return super.onPrepareOptionsMenu(menu);
     }
@@ -101,24 +95,5 @@ public class MainActivity extends ActionBarActivity implements AdapterView.OnIte
         return super.onOptionsItemSelected(item);
     }
 
-    private void exibirItem(int i){
-        String selecionado = mDrawerList.getItemAtPosition(i).toString();
-        Fragment fragment = PrimeiroNivelFragment.novaInstancia(selecionado);
 
-        FragmentManager fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction().replace(R.id.content_frame,fragment).commit();
-
-        mDrawerList.setItemChecked(i,true);
-        mDrawerLayout.closeDrawer(mDrawerList);
-    }
-
-    private void atualizarTitulo(boolean atualizar){
-        if (atualizar){
-            mToolbar.setTitle(R.string.app_name);
-        }else{
-            int posicaoAtual = mDrawerList.getCheckedItemPosition();
-            String opcaoAtual = mDrawerList.getItemAtPosition(posicaoAtual).toString();
-            mToolbar.setTitle(opcaoAtual);
-        }
-    }
 }
