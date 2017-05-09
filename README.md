@@ -5,6 +5,7 @@
 ## Conteúdo
 
   - [Activty](#activity)
+     - [Declarar Activity no Manifest](#declararActivityManifest)
   
   
 <a name="activity"></a>   
@@ -22,4 +23,16 @@
     }
   }
  ```
-   Uma activity é iniciada através do metódo **onCreate**. O layout da activity é inicializado através do metódo *setContentView*. O layout é refenciado por *R.layout.activity_main*.
+   Uma activity é iniciada através do metódo **onCreate**. O layout da activity é localizado através do metódo *setContentView*. Esse layout é referenciado por *R.layout.activity_main*.
+
+<a name="declararActivityManifest"></a>
+## Declarar Activity no Manifest
+
+   Para o android reconhece a activity é necessário declarar  ela no *AndroidManifest.xml*.
+   
+```
+  <activity android:name=".pacote.nome></activity>
+  
+  * Pacote: O pacote em que a Activity esta.
+  * Nome: O nome da Activity.
+```   
