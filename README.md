@@ -42,4 +42,5 @@
 <a name="cliclVidaActivity"></a>
 ##  Ciclo de Vida da Activity
 
-   Toda activity contém um ciclo de vida que é composto por estados que a activity pode possuir durante a sua existencia. 
+   Toda activity contém um ciclo de vida que é composto por estados que a activity pode possuir durante a sua existencia. <br/>
+   <img width="100" src="https://github.com/jeanvarela/RepositorioAndroid/blob/master/imagens/CicloVida.png"/>
