@@ -43,4 +43,6 @@
 ##  Ciclo de Vida da Activity
 
    Toda activity contém um ciclo de vida que é composto por estados que a activity pode possuir durante a sua existencia. <br/>
-   <img width="100" src="https://github.com/jeanvarela/RepositorioAndroid/blob/master/imagens/CicloVida.png"/>
+   
+   ![Humorous image of software quality estimation as a count of how many expletives
+you shout when reading code](https://github.com/jeanvarela/RepositorioAndroid/blob/master/imagens/CicloVida.png)
