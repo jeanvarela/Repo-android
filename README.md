@@ -30,7 +30,7 @@
 
    Para o android reconhece a activity é necessário declarar  ela no *AndroidManifest.xml*.
    
-```
+```android
   <activity android:name=".pacote.nome></activity>
   
   * Pacote: O pacote em que a Activity esta.
