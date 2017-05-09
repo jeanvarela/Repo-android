@@ -51,5 +51,6 @@ you shout when reading code](https://github.com/jeanvarela/RepositorioAndroid/bl
    - **onStart**: É chamada logo após o **onCreate**. Também é chamada quando a activity ganha foco. Durante a execução desse metódo as seguintes ações ocorrem:<br/>
    -- Inicializa o código que mantém de UI;<br/>
    -- Registra o **BroadcastReceiver** que monitora alterações que são refletidas na interface do usuário. <br/>
-   - **onResume**: Esse estado é quando a view está complemtamente carregada para interação do usuário. Ela permanece nesse estado até a activity perder o foco. Esse metódo é chamado logo após o **onStart** ou depois do **onStop**
+   - **onResume**: Esse estado é quando a view está complemtamente carregada para interação do usuário. Ela permanece nesse estado até a activity perder o foco. Esse metódo é chamado logo após o **onStart** ou depois do **onPause**.
+   - **onPause**: Esse metódo é chamado quando a activity perde o foco. Nesse metódo deve ser utilizado para interonper eventos que só devem ocorrer se a activity estiver em primeiro plano, por exemplo, a exibição de um video. 
 
