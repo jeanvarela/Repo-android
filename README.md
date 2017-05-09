@@ -6,6 +6,7 @@
 
   - [Activty](#activity)
      - [Declarar Activity no Manifest](#declararActivityManifest)
+     - [Ciclo de Vida da Activity](#cliclVidaActivity)
   
   
 <a name="activity"></a>   
@@ -37,3 +38,8 @@
   * Pacote: O pacote em que a Activity esta.
   * Nome: O nome da Activity.
 ```   
+
+<a name="cliclVidaActivity"></a>
+##  Ciclo de Vida da Activity
+
+   Toda activity contém um ciclo de vida que é composto por estados que a activity pode possuir durante a sua existencia. 
