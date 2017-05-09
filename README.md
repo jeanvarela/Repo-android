@@ -47,8 +47,8 @@
    ![Humorous image of software quality estimation as a count of how many expletives
 you shout when reading code](https://github.com/jeanvarela/RepositorioAndroid/blob/master/imagens/CicloVida.png)
 
-   - **onCreate **: É executada logo após a activity ser criada. É  executada apenas uma vez. Ela é respionsável por carragar os layout XML e configuração de inicialização;
-   - **onStart **: É chamada logo após o **onCreate**. Também é chamada quando a activity ganha foco. Durante a execução desse metódo as seguintes ações ocorrem:
+   - onCreate: É executada logo após a activity ser criada. É  executada apenas uma vez. Ela é respionsável por carragar os layout XML e configuração de inicialização;
+   - **onStart**: É chamada logo após o **onCreate**. Também é chamada quando a activity ganha foco. Durante a execução desse metódo as seguintes ações ocorrem:
    -- Inicializa o código que mantém de UI;
    -- Registra o **BroadcastReceiver** que monitora alterações que são refletidas na interface do usuário.
    
