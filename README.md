@@ -23,7 +23,8 @@
     }
   }
  ```
-   Quando a activity termina de ser criada é chamado o metódo **onCreate**. O layout da activity é localizado através do metódo *setContentView*. Esse layout é referenciado por *R.layout.activity_main*.
+   Quando a activity termina de ser criada é chamado o metódo **onCreate**. O layout da activity é localizado através do metódo *setContentView*. Esse layout é referenciado por *R.layout.activity_main*. <br/>
+   O objeto **Bundle** é a classe usada para guardar objetos na forma chave/valor. O Bundle é usado para passar dados entre componentes Android através da classe Intent.
 
 <a name="declararActivityManifest"></a>
 ## Declarar Activity no Manifest
