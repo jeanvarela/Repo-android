@@ -52,5 +52,10 @@ you shout when reading code](https://github.com/jeanvarela/RepositorioAndroid/bl
    -- Inicializa o código que mantém de UI;<br/>
    -- Registra o **BroadcastReceiver** que monitora alterações que são refletidas na interface do usuário. <br/>
    - **onResume**: Esse estado é quando a view está complemtamente carregada para interação do usuário. Ela permanece nesse estado até a activity perder o foco. Esse metódo é chamado logo após o **onStart** ou depois do **onPause**.
-   - **onPause**: Esse metódo é chamado quando a activity perde o foco. Nesse metódo deve ser utilizado para interonper eventos que só devem ocorrer se a activity estiver em primeiro plano, por exemplo, a exibição de um video. 
+   - **onPause**: Esse metódo é chamado quando a activity perde o foco. Nesse metódo deve ser utilizado para interonper eventos que só devem ocorrer se a activity estiver em primeiro plano, por exemplo, a exibição de um video. Também é o momento de liberar recurso a fim de preservar a bateria. 
+   - **onStop**: Esse metódo é chamado quando a activity não é mais visível ao usuário. Também que chamado quando a atividade termina de ser executada e esta preste a ser encerrada. Nessa momento os  recursos que não são mais utilizados devem ser liberados. 
+   - **onDestroy**: Esse metódo destroy a activity e libera todos os recursos. Esse metódo é chamado em três situações:
+   -- Utilização do método **finish()**; <br/>
+   -- O sistema destroi a activity para libera espaço; <br/>
+   -- A activity é destruida por causo da mudança de horientação da tela.
 
