@@ -8,6 +8,7 @@
      - [Declarar Activity no Manifest](#declararActivityManifest)
      - [Ciclo de Vida da Activity](#cliclVidaActivity)
      - [Orientação da Activity](#oriientacaoActivity)
+  - [ListView](#listView)
   
   
 <a name="activity"></a>   
@@ -77,6 +78,7 @@ you shout when reading code](https://github.com/jeanvarela/RepositorioAndroid/bl
 ```android
   setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 ```  
-      
-   
+
+<a name="listView"></a>
+##  ListView
    
