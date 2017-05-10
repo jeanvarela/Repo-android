@@ -64,8 +64,8 @@ you shout when reading code](https://github.com/jeanvarela/RepositorioAndroid/bl
 ##  Orientação da Activity
 
    Uma activity pode assumir duas orientações: **portrait** ou **landscape**, que são respectivamente *retrato* e *paisagem*. <br/>
-   A orientação da activity é estabelecida através de propiedade **screenOrientation**. A orientação pode ser definida atravé duas maneiras:
-   -- No AndroidManifest.xml
+   A orientação da activity é estabelecida através de propiedade **screenOrientation**. A orientação pode ser definida atravé duas maneiras: <br/>
+  - No AndroidManifest.xml
       Através da utilização da tag **android:screenOrientation**
 ```android
   <activity android:name=".pacote.nome"
@@ -73,7 +73,7 @@ you shout when reading code](https://github.com/jeanvarela/RepositorioAndroid/bl
   </activity>
 ```   
       
-   -- No **onCreate** da activity
+  - No **onCreate** da activity
 ```android
   setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
 ```  
