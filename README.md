@@ -82,5 +82,8 @@ you shout when reading code](https://github.com/jeanvarela/RepositorioAndroid/bl
 <a name="listView"></a>
 ##  ListView
     
-   O *ListView* é que elemento que permite exibir itens em forma de lista e a rolagem dos itens caso a quantidade de itens ultrapasse os limites da view.
+   O *ListView* é que elemento que permite exibir itens em forma de lista e a rolagem dos itens caso a quantidade de itens ultrapasse os limites da view. <br/>
+   Para exibir itens em uma lista é necessário a utilização de um **adapter**:
+   
+   
    
